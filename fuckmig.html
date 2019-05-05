@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+    <style type="text/css">
+
+
+.topbackground{
+     background-image: url('ing/topbackground.png');
+     background-size: 100%;
+     background-repeat: no-repeat;
+     
+        height: 632px;
+}
+.example{
+     height: 100vh;
+     background-color: blue;
+}
+
+.toggle-btn {
+     position: fixed;
+     margin: 1.4em;
+     padding: 1em;
+     width: 40px;
+     height: 12px;
+    right: 45px;
+    top: 23px;
+     z-index: 1049;
+     cursor: pointer;
+}
+
+span.one {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: #fff;
+}
+
+span.two {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: #fff;
+     margin-top: 12px;
+}
+span.three {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: #fff;
+     margin-top: 24px;
+}
+
+.menu {
+  z-index: 999;
+     position: fixed;
+     background: #101010;
+     height: 100vh;
+    width: 250px;
+    right: 0;
+     top: -102%;
+}
+
+.data {
+     padding: 8em 0 0 2em;
+     text-align: left;
+}
+
+ul {
+     list-style: none;
+}
+
+li:first-child {
+     color: grey;
+     font-family: Poppins;
+     font-size: 24px;
+}
+
+li:not(:first-child) {
+     color: #fff;
+     font-size: 42px;
+}
+
+a {
+     text-decoration: none;
+     color: #fff;
+     font-family: Poppins;
+}
+.navbar{
+    height: 120px;
+}
+
+.baggroundtree{
+    background: url('ing/Baggrundtree.png');
+       background-size: 100%;
+     background-repeat: no-repeat;
+}
+
+
+html, body, main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#carousel {
+    overflow: hidden;
+    height: 465px;
+    top: 35%;
+    transform: translateY(0%);
+}
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+#carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 22%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.prev img {
+  width: 400px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 8%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  top: 0%;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 78%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 400px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 92%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+main {
+height: auto;
+}
+
+
+
+
+
+
+.carousel .item {
+    color: #999;
+    overflow: hidden;
+    min-height: 120px;
+    font-size: 13px;
+}
+.carousel .media {
+    position: relative;
+    padding: 0 0 0 20px;
+}
+.carousel .media img {
+    width: 75px;
+    height: 75px;
+    display: block;
+    border-radius: 50%;
+}
+.carousel .testimonial-wrapper {
+    padding: 0 10px;
+}
+.carousel .testimonial {
+    color: #808080;
+    position: relative;
+    padding: 15px;
+    background: #f1f1f1;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+.carousel .testimonial::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: #f1f1f1;
+    border: 1px solid #efefef;
+    border-width: 0 0 1px 1px;
+    position: absolute;
+    bottom: -8px;
+    left: 46px;
+    transform: rotateZ(-46deg);
+}
+.carousel .star-rating li {
+    padding: 0 2px;
+}
+.carousel .star-rating i {
+    font-size: 16px;
+    color: #ffdc12;
+}
+.carousel .overview {
+    padding: 3px 0 0 15px;
+}
+.carousel .overview .details {
+    padding: 5px 0 8px;
+}
+.carousel .overview b {
+    text-transform: uppercase;
+    color: #1abc9c;
+}
+.carousel .carousel-indicators {
+    bottom: -70px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin: 1px 2px;
+}
+.carousel-indicators li {   
+    background: #e2e2e2;
+    border: 4px solid #fff;
+}
+.carousel-indicators li.active {
+    color: #fff;
+    background: #1abc9c;
+    border: 5px double;    
+}
+.overlay{
+    display: table;
+    width: 100%;
+    padding: 0;
+    background: url('ing/topbackground.png') top center no-repeat;
+    background-size: cover;
+}
+
+    </style>
+    <body>
+
+<!-- <img src="ing/topbackground.png" style="position: absolute; width: 100%;height: 100%;"> -->
+ <div class="overlay">
+<div class="container">
+ 
+                   <div class="menu">
+              <div class="data">
+                   <ul>
+                        <li>Navigation</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Contact</a></li>
+                   </ul>
+              </div>
+         </div>
+
+<nav class="navbar  navbar-dark bg-none">
+  <div class="col-4">
+  <a class="navbar-brand" href="#"><img class="img-fluid" alt="Responsive image" src="ing/logo.png"></a>
+</div>
+           <div class="toggle-btn">
+              <span class="one"></span>
+              <span class="two"></span>
+              <span class="three"></span>
+
+         </div>
+</nav>
+
+    <div class="col-12" style="padding-top: 291px;padding-bottom: 270px;">
+    <div class="col-12">
+<h1 class="font-weight-light display-1">Light text.</h1>
+    </div>
+    <div class="col-12">
+        <h1 class="font-weight-bold display-1">Bold text.</h1>
+
+    </div>
+    <div class="col-md-12 col-sm-12">
+        <button class="btn btn-lg btn-dark" style="margin-right: 20px;">SE CASES</button>
+        <button class="btn btn-lg btn-outline-light">SE CASES</button>
+    </div>
+    </div>
+  </div>
+    </div>
+
+
+
+     
+
+
+     <div class="container bg-white">
+        <div class="row">
+        <div class="col-md-12">
+        <p class="text-center" style="margin-top: 20px;">Vi er eksperter i</p>
+        <h2 class="text-center">mulitform og jke design</h2>
+        <hr class="text-center" width="100" style="color: black;height: 3px;border: none;background-color: black;">
+        <p class="text-center">- med brands som Gagganau, Siemens og Dornbracht, udvikler vi komplette<br>
+og gennemtænkte løsninger til vores kunder.</p>
+</div>
+    <div class="col-md-6" >
+        <div style="background-color: #f3f3f3;">
+        <img class="" src="ing/baggrund.png" style="height: 300px;width: 100%;">
+        <img class="img-fluid mx-auto d-block" style="margin: 20px;" src="ing/Logo-Multiform.png">
+        </div>
+    </div>
+
+    <div class="col-md-6" >
+        <div style="background-color: #f3f3f3;">
+        <img class="" src="ing/baggrund1.png" style="height: 300px;width: 100%;">
+        <img class="img-fluid mx-auto d-block" style="margin: 20px;" src="ing/Logo-JKE.png">
+        </div>
+    </div>
+
+         </div>
+     </div>
+
+
+     <div class="baggroundtree">
+        <div class="container" style="padding: 30px 0 30px 0;">
+            <div class="row">
+            <div class="col-3 treebox">
+                <img class="img-fluid" src="ing/taglejlighed.png">
+            </div>
+            <div class="col-6 treebox">
+                <img class="img-fluid" src="ing/14698.png">
+            </div>
+            <div class="col-3">
+                <div class="col-md-12 treebox">
+                    <img class="img-fluid" src="ing/form1-bad-055.png" style="margin-bottom: 81px;">
+
+                    <img class="img-fluid" src="ing/form1-bad-055.png">
+                </div>
+               
+            </div>
+
+               
+            </div>
+
+        </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                     <p class="text-center" style="margin-top: 20px;">Tag en tur rund i</p>
+                    <h2 class="text-center">Vores projekter</h2>
+                    <hr class="text-center" width="100" style="color: black;height: 3px;border: none;background-color: black;">
+                </div>
+
+
+ <main>
+
+    <div id="carousel">
+
+       <div class="hideLeft">
+        <img src="https://i1.sndcdn.com/artworks-000165384395-rhrjdn-t500x500.jpg">
+      </div>
+
+      <div class="prevLeftSecond">
+        <img src="https://i1.sndcdn.com/artworks-000185743981-tuesoj-t500x500.jpg">
+      </div>
+
+      <div class="prev">
+        <img src="https://i1.sndcdn.com/artworks-000158708482-k160g1-t500x500.jpg">
+      </div>
+
+      <div class="selected">
+        <a href="ing/Baggrund.png" title="Project Title" data-lightbox-gallery="gallery1">
+        <img src="ing/Baggrund.png">
+      </a>
+      </div>
+
+      <div class="next">
+        <img src="https://i1.sndcdn.com/artworks-000028787381-1vad7y-t500x500.jpg">
+      </div>
+
+      <div class="nextRightSecond">
+        <img src="https://i1.sndcdn.com/artworks-000108468163-dp0b6y-t500x500.jpg">
+      </div>
+
+      <div class="hideRight">
+        <img src="https://i1.sndcdn.com/artworks-000064920701-xrez5z-t500x500.jpg">
+      </div>
+
+    </div>
+
+    <div class="buttons">
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+    </div>
+
+<div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+</div>
+
+  </main>
+            </div>
+        </div>
+
+
+
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                     <p class="text-center" style="margin-top: 20px;">Lad dig inspirere</p>
+                    <h2 class="text-center">Vores kunder siger</h2>
+                    <hr class="text-center" width="100" style="color: black;height: 3px;border: none;background-color: black;">
+                </div>
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>See What <b>Our Customers</b> Say About Us</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>   
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="testimonial-wrapper">
+                                    <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.</div>
+                                    <div class="media">
+                                        <div class="media-left d-flex mr-3">
+                                            <img src="ing/logo.png" alt="">                                       
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>Paula Wilson</b></div>
+                                                <div class="details">Media Analyst / SkyNet</div>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="testimonial-wrapper">
+                                    <div class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus, metus id mi gravida.</div>
+                                    <div class="media">
+                                        <div class="media-left d-flex mr-3">
+                                            <img src="ing/logo.png" alt="">                                       
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>Antonio Moreno</b></div>
+                                                <div class="details">Web Developer / SoftBee</div>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="item carousel-item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="testimonial-wrapper">
+                                    <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.</div>
+                                    <div class="media">
+                                        <div class="media-left d-flex mr-3">
+                                            <img src="ing/logo.png" alt="">                                       
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>Michael Holz</b></div>
+                                                <div class="details">Web Developer / DevCorp</div>                                          
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="testimonial-wrapper">
+                                    <div class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus, metus id mi gravida.</div>
+                                    <div class="media">
+                                        <div class="media-left d-flex mr-3">
+                                            <img src="ing/logo.png" alt="">                                       
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>Mary Saveley</b></div>
+                                                <div class="details">Graphic Designer / MarsMedia</div>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="testimonial-wrapper">
+                                    <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.</div>
+                                    <div class="media">
+                                        <div class="media-left d-flex mr-3">
+                                            <img src="ing/logo.png" alt="">                                       
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>Martin Sommer</b></div>
+                                                <div class="details">SEO Analyst / RealSearch</div>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div
+                        </div>          
+                    </div>
+                    <div class="item carousel-item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="testimonial-wrapper">
+                                    <div class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.</div>
+                                    <div class="media">
+                                        <div class="media-left d-flex mr-3">
+                                            <img src="ing/logo.png" alt="">                                       
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>Martin Sommer</b></div>
+                                                <div class="details">SEO Analyst / RealSearch</div>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="testimonial-wrapper">
+                                    <div class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus, metus id mi gravida.</div>
+                                    <div class="media">
+                                        <div class="media-left d-flex mr-3">
+                                            <img src="ing/logo.png" alt="">                                       
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>John Williams</b></div>
+                                                <div class="details">Web Designer / UniqueDesign</div>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                    </div>
+                                </div>                              
+                            </div>
+                        </div>          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/nivo-lightbox.js"></script> 
+
+     <script>
+             $('a').nivoLightbox({
+            effect: 'slideDown',  
+            keyboardNav: true,                            
+        });
+var t1 = new TimelineMax({paused: true});
+
+t1.to(".one", 0.1, {    
+     y: 6,
+     rotation: 45,
+     ease: Expo.easeInOut
+});
+t1.to(".two", 0.1, {
+     y: -6,
+     rotation: -45,
+     ease: Expo.easeInOut,
+     delay: -0.1
+});
+
+t1.to(".three", 0, { display:'none'});
+
+
+t1.to(".menu", 1, {
+     top: "0%", 
+     ease: Expo.easeInOut,
+     delay: -0.5
+});
+
+t1.staggerFrom(".menu ul li", 0.8, {x: 200, opacity: 0, ease:Expo.easeOut}, 0.3);
+
+t1.reverse();
+$(document).on("click", ".toggle-btn", function() {
+     t1.reversed(!t1.reversed());
+});
+
+     </script>
+
+     <script type="text/javascript">
+         function moveToSelected(element) {
+
+  if (element == "next") {
+    var selected = $(".selected").next();
+  } else if (element == "prev") {
+    var selected = $(".selected").prev();
+  } else {
+    var selected = element;
+  }
+
+  var next = $(selected).next();
+  var prev = $(selected).prev();
+  var prevSecond = $(prev).prev();
+  var nextSecond = $(next).next();
+
+  $(selected).removeClass().addClass("selected");
+
+  $(prev).removeClass().addClass("prev");
+  $(next).removeClass().addClass("next");
+
+  $(nextSecond).removeClass().addClass("nextRightSecond");
+  $(prevSecond).removeClass().addClass("prevLeftSecond");
+
+  $(nextSecond).nextAll().removeClass().addClass('hideRight');
+  $(prevSecond).prevAll().removeClass().addClass('hideLeft');
+
+}
+
+// Eventos teclado
+$(document).keydown(function(e) {
+    switch(e.which) {
+        case 37: // left
+        moveToSelected('prev');
+        break;
+
+        case 39: // right
+        moveToSelected('next');
+        break;
+
+        default: return;
+    }
+    e.preventDefault();
+});
+/*
+$('#carousel div').click(function() {
+  moveToSelected($(this));
+});
+*/
+$('#prev').click(function() {
+  moveToSelected('prev');
+});
+
+$('#next').click(function() {
+  moveToSelected('next');
+});
+
+     </script>
+</body>
+</html>
