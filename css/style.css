@@ -256,3 +256,47 @@ height: auto;
     background: url('../ing/topbackground.png') top center no-repeat;
     background-size: cover;
 }
+.overlay2{
+      display: table;
+    width: 100%;
+    padding: 0;
+    background: url('../ing/kontaktos.png') top center no-repeat;
+    background-size: cover;
+}
+
+li.active.carousel-point {
+    padding: 8px;
+    border-radius: 15px;
+}
+
+li.carousel-point {
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.carousel-indicators .active {
+    background-color: black;
+}
+
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+        background-color: rgba(148, 133, 133, 0.5);
+}
+
+.treepad{
+  padding: 30px 0px 30px 0px;
+}
+
+@media (max-width: 576px){
+.treepad {
+  padding: 15px;
+}
+}
