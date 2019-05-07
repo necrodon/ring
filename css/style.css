@@ -87,7 +87,12 @@ a {
 .baggroundtree{
     background: url('../ing/Baggrundtree.png');
        background-size: 100%;
-     background-repeat: no-repeat;
+}
+
+.baggroundtree2{
+  background:url(../ing/baggrundtree.png);
+  background-size: 100%;
+
 }
 
 
@@ -263,6 +268,21 @@ height: auto;
     background: url('../ing/kontaktos.png') top center no-repeat;
     background-size: cover;
 }
+.overlay3{
+      display: table;
+    width: 100%;
+    padding: 0;
+    background: url('../ing/videobackground.png') top center no-repeat;
+    background-size: cover;
+}
+
+.overlay4{
+      display: table;
+    width: 100%;
+    padding: 0;
+    background: url('../ing/nyhedsbrev.png') top center no-repeat;
+    background-size: cover;
+}
 
 li.active.carousel-point {
     padding: 8px;
@@ -299,4 +319,50 @@ li.carousel-point {
 .treepad {
   padding: 15px;
 }
+}
+
+.videoback{
+  height: 800px;
+  text-align: center;
+  position: relative;
+}
+
+.playbutton{
+    position: absolute;
+    top: 50%;
+}
+.ownerback{
+  height: auto;
+  text-align: center;
+      margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.ownertext{
+      padding-right: 250px;
+    padding-left: 250px;
+}
+
+.ownerhover{
+  opacity: 0.7;
+}
+.ownerhover:hover{
+  opacity: 1;
+}
+
+.newsback{
+    height: auto;
+    text-align: center;
+    margin-top: 115px;
+    margin-bottom: 300px;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+color: black !important;
+}
+
+
+.jfooter{
+  background:url('../ing/footerback.png');
 }

@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title></title>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
 <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+    .kontaktslide {padding-top: 1em;}
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {  
+    .kontaktslide {padding-top: 2em;}
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .kontaktslide {padding-top: 3em;}
+}
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    .kontaktslide {padding-top: 4em;}
+  }
+
+
+@media (max-width: 768px) {  
+    .btnkontakt {padding-top: 2em;}
+  }
+
+  @media (max-width: 992px) { 
+    .ownertext {padding: 0;}
+}
+
+
+
+#custom-search-input{
+    padding: 0px;
+    border: solid 1px #E4E4E4;
+    /* border-radius: 6px; */
+    background-color: #fff;
+}
+
+#custom-search-input {
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input {
+    width: 100%;
+    height: 100%;
+    /* margin: 2px 0 0 0; */
+    background: black;
+    /* box-shadow: none; */
+    border-radius: 0;
+    /* border: 0; */
+    /* background-color: black; */
+    /* padding: 0 8px 0 10px; */
+    /* border-left: solid 1px #ccc; */
+}
+
+
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+.btn-info{
+  border-radius: 0;
+  background-color: black;
+    border-color: black;
+}
+
+.input-group.col-md-12{
+
+  padding: 0;
+  margin: 0;
+
+}
+
+input.form-control.input-lg {
+border: 0;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+}
+input.form-control.input-lg{
+color: black;
+height: 55px;
+font-size: 1.15em;
+font-weight: 600;
+}
+</style>
     <body>
 
 <!-- <img src="ing/topbackground.png" style="position: absolute; width: 100%;height: 100%;"> -->
@@ -236,13 +326,152 @@ og gennemtænkte løsninger til vores kunder.</p>
         </div>
 
 <div class="overlay2">
-        <div class="container-fluid" style="height: 200px;">
-          
+        <div class="container" style="height: 200px;">
+          <div class="row kontaktslide" >
+          <div class="col-8">
+            <h3 style="color: white">Kontakt <strong>FRONTEND</strong> og lad os få en snak om dit
+drømmekøkken, bad, garderobe eller andet inventar.</h3>
+          </div>
+          <div class="col-4 btnkontakt" style="position: relative;">
+            <button class="btn btn-outline-light" style="position: absolute;top: 28%;">Kontakt</button>
+          </div>
             
-                  </div>
+        </div>
+      </div>
 </div>
 
 
+
+
+<div class="overlay3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 videoback">
+        <div class="playbutton col-12">
+            <img src="ing/playbutton.png">
+             <h1>AFSPILD VIDEO</h1>
+          </div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div class="baggroundtree2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 ownerback">
+        <div class="col-12 ownerimg">
+          <img src="ing/perimg.png" class="ownerhover" >
+          <img src="ing/perimg.png" class="ownerhover" >
+          <img src="ing/perimg.png" class="ownerhover" >
+          <img src="ing/perimg.png" class="ownerhover" >
+          <img src="ing/perimg.png" class="ownerhover" >
+
+        </div>
+        <div class="" style="color: white;">
+                    <p class="ownertext">“Vi har mere end 20 års erfaring i at skabe løsninger indenfor køkken, bad og garderobe - og vi gør os umage helt ned i detaljerne, lige fra de første tegninger og helt frem til vi monterer løsningen hos dig”</p>
+                    <hr class="text-center" width="100" style="color: black;height: 3px;border: none;background-color: white;">
+                    <h3>PER LARSEN</h3>
+                    <p>indehaver frontend</p>
+
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay4">
+  <div class="container">
+    <div class="row">
+      <div class="newsback col-12">
+        <div class="col-12 newstext">
+          <p>Tilmeld dig feinhaus nyhedsbrev</p>
+          <h1>FÅ DE NYSTE TRENDS</h1>
+          <hr class="text-center" width="100" style="color: black;height: 3px;border: none;background-color: black;">
+
+        </div>
+        <div class="newsinput col-12">
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="email" class="form-control input-lg" placeholder="Skriv din email her ..." />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button" style="height: 100%;">
+                        SEND
+                          </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="jfooter">
+<footer class="page-footer font-small mdb-color pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3" style="text-align: center;">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" style="color: white;text-align: center;">
+        <p>  Info@vestjyskmarketing.dk    |      97 32 01 08</p>
+        <p>  St. Blichersvej 1-3    |    6950 Ringkøbing</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" style="text-align: center;">
+        <img src="ing/frontendlogo.png">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4" style="text-align: center;">
+        <img src="ing/gaggenau-logo.png" style="position: relative; top: 18px;">
+        <img src="ing/Gazelle.png">
+      </div>
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+
+  <div class="container">
+    <div class="row">
+            <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left">© 2018 Copyright:
+          <a href="https://mdbootstrap.com/education/bootstrap/">
+            <strong> MDBootstrap.com</strong>
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Footer -->
 
 
 
