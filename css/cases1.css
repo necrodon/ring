@@ -1,6 +1,5 @@
 .topbackground{
      background-image: url('../ing/medarbejder/kontaktback.png');
-     background-size: 100%;
      background-repeat: no-repeat;
      
         height: 632px;
@@ -311,6 +310,14 @@ height: auto;
     background-size: cover;
 }
 
+.ansatteoverlay{
+    display: table;
+    width: 100%;
+    padding: 0;
+    background: url('../ing/medarbejder/ansatteback.png') top center no-repeat;
+    background-size: cover;
+}
+
 .productoverlay{
       display: table;
     width: 100%;
@@ -426,6 +433,31 @@ background:url('../ing/base.png');
     transition: 0.3s;
     
 }
+
+
+.ansathover:hover .ansatonhover{
+  
+  opacity: 1;
+  
+}
+
+.ansatonhover{
+    height: 100%;
+    /* text-align: center; */
+    width: 95%;
+    /* left: 34%; */
+    /* top: 70%; */
+    /* margin-left: -50px; */
+    /* margin-top: -81px; */
+    /* border-radius: 50px; */
+    /* position: absolute; */
+    opacity: 0;
+    /* padding: 27px; */
+    padding-top: 77%;
+    transition: 0.3s;
+}
+
+
 .carhovercases:hover .caroonhovercases{
   
   opacity: 1;
