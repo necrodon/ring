@@ -1,6 +1,5 @@
-
 .topbackground{
-     background-image: url('/ing/topbackground.png');
+     background-image: url('../ing/medarbejder/kontaktback.png');
      background-size: 100%;
      background-repeat: no-repeat;
      
@@ -389,7 +388,7 @@ li.carousel-point {
 .newsback{
     height: auto;
     text-align: center;
-    margin-top: 115px;
+    margin-top: 44px;
     margin-bottom: 300px;
 }
 
@@ -491,6 +490,7 @@ background:url('../ing/base.png');
     border: solid 1px #E4E4E4;
     /* border-radius: 6px; */
     background-color: #fff;
+    margin-bottom: 30px;
 }
 
 #custom-search-input {
