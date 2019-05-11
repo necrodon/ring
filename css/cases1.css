@@ -26,21 +26,21 @@ span.one {
      position: absolute;
      width: 40px;
      height: 2px;
-     background: #fff;
+     background: black;
 }
 
 span.two {
      position: absolute;
      width: 40px;
      height: 2px;
-     background: #fff;
+     background: black;
      margin-top: 12px;
 }
 span.three {
      position: absolute;
      width: 40px;
      height: 2px;
-     background: #fff;
+     background: black;
      margin-top: 24px;
 }
 
@@ -48,23 +48,25 @@ span.one1 {
      position: absolute;
      width: 40px;
      height: 2px;
-     background: black;
+     background: #fff;
 }
 
 span.two2 {
      position: absolute;
      width: 40px;
      height: 2px;
-     background: black;
+     background: #fff;
      margin-top: 12px;
 }
 span.three3 {
      position: absolute;
      width: 40px;
      height: 2px;
-     background: black;
+     background: #fff;
      margin-top: 24px;
 }
+
+
 .menu {
   z-index: 999;
   position: fixed;
@@ -277,7 +279,7 @@ height: auto;
     display: table;
     width: 100%;
     padding: 0;
-    background: url('../ing/topbackground.png') top center no-repeat;
+    background: url('../ing/casestopback.png') top center no-repeat;
     background-size: cover;
 }
 .overlay2{
@@ -302,14 +304,21 @@ height: auto;
     background: url('../ing/nyhedsbrev.png') top center no-repeat;
     background-size: cover;
 }
-.overlay5{
-      display: table;
+.casesoverlay{
+    display: table;
     width: 100%;
     padding: 0;
-    background: url('../ing/butikken/video.png') top center no-repeat;
+    background: url('../ing/topbackcases.png') top center no-repeat;
     background-size: cover;
 }
 
+.productoverlay{
+      display: table;
+    width: 100%;
+    padding: 0;
+    background: url('../ing/product/topback.png') top center no-repeat;
+    background-size: cover;
+}
 li.active.carousel-point {
     padding: 8px;
     border-radius: 15px;
@@ -416,8 +425,37 @@ background:url('../ing/base.png');
     border-radius: 50px;
     opacity: 0;
     transition: 0.3s;
-
+    
 }
+.carhovercases:hover .caroonhovercases{
+  
+  opacity: 1;
+  
+}
+.casesimg{
+  margin-bottom: 30px;
+}
+
+.caroonhovercases{
+    height: 100px;
+    text-align: center;
+    width: 100px;
+    background-color: black;
+    left: 50%;
+    top: 70%;
+    margin-left: -50px;
+    margin-top: -81px;
+    border-radius: 50px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+  
+}
+
+
+
+
+
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {  
     .kontaktslide {padding-top: 1em;}
@@ -546,3 +584,204 @@ img.searchicon{
     top: 37%;
 }
 
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+    .kontaktslide {padding-top: 1em;}
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {  
+    .kontaktslide {padding-top: 2em;}
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .kontaktslide {padding-top: 3em;}
+}
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    .kontaktslide {padding-top: 4em;}
+  }
+
+
+@media (max-width: 768px) {  
+    .btnkontakt {padding-top: 2em;}
+  }
+
+  @media (max-width: 992px) { 
+    .ownertext {padding: 0;}
+}
+
+
+
+#custom-search-input{
+    padding: 0px;
+    border: solid 1px #E4E4E4;
+    /* border-radius: 6px; */
+    background-color: #fff;
+}
+
+#custom-search-input {
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input {
+    width: 100%;
+    height: 100%;
+    /* margin: 2px 0 0 0; */
+    background: black;
+    /* box-shadow: none; */
+    border-radius: 0;
+    /* border: 0; */
+    /* background-color: black; */
+    /* padding: 0 8px 0 10px; */
+    /* border-left: solid 1px #ccc; */
+}
+
+
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+.btn-info{
+  border-radius: 0;
+  background-color: black;
+    border-color: black;
+}
+
+.input-group.col-md-12{
+
+  padding: 0;
+  margin: 0;
+
+}
+
+input.form-control.input-lg {
+border: 0;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+}
+input.form-control.input-lg{
+color: black;
+height: 55px;
+font-size: 1.15em;
+font-weight: 600;
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+.categories {
+  text-align: center;
+}
+ul.cat li {
+  display: inline-block;
+}
+ol.type li {
+  display: inline-block;
+  margin: 0 10px 40px 10px;
+}
+ol.type li a {
+  color: #555;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 16px;
+  border: 0;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+ol.type li a.active {
+border-bottom: 1px solid black;
+}
+ol.type li a:hover {
+  border-bottom: 1px solid black;
+
+}
+.isotope-item {
+  z-index: 2
+}
+.isotope-hidden.isotope-item {
+  z-index: 1
+}
+.isotope, .isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope-item {
+  margin-right: -1px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.isotope {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity;
+}
+.portfolio-item {
+  margin: 15px 0;
+}
+.portfolio-item .hover-bg {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.hover-bg .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30% 0 0 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.hover-bg .hover-text>h4 {
+  opacity: 0;
+  color: #fff;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.hover-bg:hover .hover-text>h4 {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.hover-bg:hover .hover-text {
+  opacity: 1;
+}
+
+.konceptbg{
+  padding: 12px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+  
+  bottom: 4%;
+  left: 3%;
+  }
