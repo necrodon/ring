@@ -3,13 +3,19 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
     <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <style type="text/css">
-    </style>
-    <body>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,600,800|Roboto:400,400i" rel="stylesheet">
+<style type="text/css">
+  
+</style>
+
+    <body style="font-family: 'Raleway', sans-serif;">
       <!-- <img src="ing/topbackground.png" style="position: absolute; width: 100%;height: 100%;"> -->
       <div id="nicememe" class="carousel slide" data-ride="carousel" style="width: 100%;text-align: center; position: absolute;">
         <div class="carousel-inner">
@@ -34,17 +40,18 @@
         </a>
       </div>
       <div class="container">
-        <div class="menu">
+        <div class="menu text-font">
           <div class="data">
             <img src="ing/frontendnav.png">
             <ul class="ulmenu">
               
-              <li class="menuli"><a href="#" class="menua">FORSIDE</a></li>
+              <li class="menuli"><a href="forside.html" class="menua ">FORSIDE</a></li>
               <li class="menuli"><a href="#" class="menua">BRANDS</a></li>
-              <li class="menuli"><a href="#" class="menua">CASES</a></li>
-              <li class="menuli"><a href="#" class="menua">BUTIKKEN</a></li>
-              <li class="menuli"><a href="#" class="menua">OM OS</a></li>
-              <li class="menuli"><a href="#" class="menua">KONTAKT</a></li>
+              <li class="menuli"><a href="cases.html" class="menua">CASES</a></li>
+              <li class="menuli"><a href="cases1.html" class="menua">CASES</a></li>
+              <li class="menuli"><a href="butikken.html" class="menua">BUTIKKEN</a></li>
+              <li class="menuli"><a href="landing.html" class="menua">OM OS</a></li>
+              <li class="menuli"><a href="kontakt.html" class="menua">KONTAKT</a></li>
             </ul>
           </div>
         </div>
@@ -53,8 +60,12 @@
             <a class="navbar-brand" href="#"><img class="img-fluid" alt="Responsive image" src="ing/logo.png"></a>
           </div>
           <div class="col-4" style="position: absolute;right: 0;
-            top: 0;">
-            <p class="navbar-brand">| 22 59 91 98 | f t l</p>
+            top: 0;opacity: 0.7">
+            <p class="navbar-brand text-font" style="font-size: 16px;">|       <i class="fas fa-phone-volume"></i> 22 59 91 98      |</p>            
+
+            <div class="iconkontakt"><i class="fab fa-facebook test"></i></div>
+            <div class="iconkontakt"><i class="fab fa-instagram"></i></div>
+            <div class="iconkontakt"><i class="fab fa-linkedin-in"></i></div>
           </div>
           <div class="toggle-btn">
             <span class="one"></span>
@@ -62,7 +73,7 @@
             <span class="three"></span>
           </div>
         </nav>
-        <div class="col-12" style="padding-top: 132px;padding-bottom: 270px;">
+        <div class="col-12" style="padding-top: 132px;padding-bottom: 270px; color: white">
           <div class="col-12">
             <h1 class="font-weight-light display-1">Light text.</h1>
           </div>
@@ -79,10 +90,10 @@
       <div class="container bg-white">
         <div class="row">
           <div class="col-md-12">
-            <p class="text-center" style="margin-top: 20px;">Vi er eksperter i</p>
-            <h2 class="text-center">mulitform og jke design</h2>
+            <p class="text-center" style="margin-top: 20px;">VI ER EKSPERTER I</p>
+            <h2 class="text-center bold-font">MULITOFRM OG JKE DESIGN</h2>
             <hr class="text-center" width="100" style="color: black;height: 3px;border: none;background-color: black;">
-            <p class="text-center">- med brands som Gagganau, Siemens og Dornbracht, udvikler vi komplette<br>
+            <p class="text-center text-font">- med brands som Gagganau, Siemens og Dornbracht, udvikler vi komplette<br>
             og gennemtænkte løsninger til vores kunder.</p>
           </div>
           <div class="col-md-6" >
@@ -123,7 +134,7 @@
         <div class="row">
           <div class="col-md-12">
             <p class="text-center" style="margin-top: 20px;">Tag en tur rund i</p>
-            <h2 class="text-center">Vores projekter</h2>
+            <h2 class="text-center bold-font">VORES PROJEKTER</h2>
             <hr class="text-center" width="100" style="color: black;height: 3px;border: none;background-color: black;">
           </div>
           <main>
@@ -190,30 +201,28 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="mydiv" style="height: 300px;width: 32%; display: inline-block;margin: 0 auto;">
+                <div class="mydiv">
                   <img src="ing/bubbletext.png">
-                  <div style="width: 100%"><h5>Anja Thomsen & Lars Dormann</h5>
-                    <p>HORSENS</p><br>
-                    <p>“I vores ombygningsprojekt, er FRONTEND fremkommet med løsninger, der har forbedret det endelige resultat væsentligt”</p>
+                  <div style="width: 100%"><h4 class="semi-bold">Anja Thomsen & Lars Dormann</h4>
+                    <p class="semi-bold" style="opacity: 0.6">HORSENS</p>
+                    <p class="text-italic">“I vores ombygningsprojekt, er FRONTEND fremkommet med løsninger, der har forbedret det endelige resultat væsentligt”</p>
                   </div>
-                  
                 </div>
-                <div class="mydiv" style="height: 300px;width: 32%; display: inline-block;margin: 0 auto;">
+                <div class="mydiv">
                   <img src="ing/bubbletext.png">
-                  <div style="width: 100%"><h5>Anja Thomsen & Lars Dormann</h5>
-                    <p>HORSENS</p><br>
-                    <p>“I vores ombygningsprojekt, er FRONTEND fremkommet med løsninger, der har forbedret det endelige resultat væsentligt”</p>
+                  <div style="width: 100%"><h4 class="semi-bold">Anja Thomsen & Lars Dormann</h4>
+                    <p class="semi-bold" style="opacity: 0.6">HORSENS</p>
+                    <p class="text-italic">“I vores ombygningsprojekt, er FRONTEND fremkommet med løsninger, der har forbedret det endelige resultat væsentligt”</p>
                   </div>
-                  
                 </div>
-                <div class="mydiv" style="height: 300px;width: 32%; display: inline-block;margin: 0 auto;">
+                                <div class="mydiv">
                   <img src="ing/bubbletext.png">
-                  <div style="width: 100%"><h5>Anja Thomsen & Lars Dormann</h5>
-                    <p>HORSENS</p><br>
-                    <p>“I vores ombygningsprojekt, er FRONTEND fremkommet med løsninger, der har forbedret det endelige resultat væsentligt”</p>
+                  <div style="width: 100%"><h4 class="semi-bold">Anja Thomsen & Lars Dormann</h4>
+                    <p class="semi-bold" style="opacity: 0.6">HORSENS</p>
+                    <p class="text-italic">“I vores ombygningsprojekt, er FRONTEND fremkommet med løsninger, der har forbedret det endelige resultat væsentligt”</p>
                   </div>
-                  
                 </div>
+
               </div>
               <div class="carousel-item">
                 <img class="d-block w-33" src="ing/taglejlighed.png" alt="Second slide">
@@ -241,7 +250,7 @@
               drømmekøkken, bad, garderobe eller andet inventar.</h3>
             </div>
             <div class="col-4 btnkontakt" style="position: relative;">
-              <button class="btn btn-outline-light" style="position: absolute;top: 28%;">Kontakt</button>
+              <button class="btn btn-outline-light semi-bold" style="position: absolute;top: 28%;    width: 160px;">KONTAKT OS</button>
             </div>
             
           </div>
@@ -253,7 +262,7 @@
             <div class="col-12 videoback">
               <div class="playbutton col-12">
                 <img src="ing/playbutton.png">
-                <h1>AFSPILD VIDEO</h1>
+                <h1 style="color: white;" class="bold-font">AFSPILD VIDEO</h1>
               </div>
             </div>
           </div>
@@ -270,7 +279,7 @@
                 <img src="ing/perimg.png" class="ownerhover" >
                 <img src="ing/perimg.png" class="ownerhover" >
               </div>
-              <div class="" style="color: white;">
+              <div class="ownerdivtext" style="color: white;">
                 <p class="ownertext">“Vi har mere end 20 års erfaring i at skabe løsninger indenfor køkken, bad og garderobe - og vi gør os umage helt ned i detaljerne, lige fra de første tegninger og helt frem til vi monterer løsningen hos dig”</p>
                 <hr class="text-center" width="100" style="color: black;height: 3px;border: none;background-color: white;">
                 <h3>PER LARSEN</h3>
@@ -286,14 +295,14 @@
           <div class="row">
             <div class="newsback col-12">
               <div class="col-12 newstext">
-                <p>Tilmeld dig feinhaus nyhedsbrev</p>
-                <h1>FÅ DE NYSTE TRENDS</h1>
+                <p>TilMELD DIG FEIHNAUS NYHEDSBREV</p>
+                <h1 class="bold-font">FÅ DE NYSTE TRENDS</h1>
                 <hr class="text-center" width="100" style="color: black;height: 3px;border: none;background-color: black;">
               </div>
               <div class="newsinput col-12">
                 <div id="custom-search-input">
                   <div class="input-group col-md-12">
-                    <input type="email" class="form-control input-lg" placeholder="Skriv din email her ..." />
+                    <input type="email" class="form-control input-lg  text-italic" placeholder="Skriv din email her ..." />
                     <span class="input-group-btn">
                       <button class="btn btn-info btn-lg" type="button" style="height: 100%;">
                       SEND
@@ -338,17 +347,17 @@
           <div class="row">
             <div class="col-md-7 col-lg-8">
               <!--Copyright-->
-              <p class="text-center text-md-left">
-                <a href="https://mdbootstrap.com/education/bootstrap/">
+              <p class="text-center text-md-left footercenter text-font">
+                
                   <strong>Copyright © 2019 Frontend - Alle rettigheder forbeholdes</strong>
-                </a>
+                
               </p>
             </div>
             <!-- Grid column -->
             <!-- Grid column -->
             <div class="col-md-5 col-lg-4 ml-lg-0">
               <!-- Social buttons -->
-              <div class="text-center text-md-right">
+              <div class="text-center text-md-right footercenter">
                 <img src="ing/VMlogo.png">
               </div>
             </div>

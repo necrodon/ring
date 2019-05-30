@@ -14,7 +14,7 @@
      margin: 1.4em;
      width: 40px;
      height: 12px;
-    right: 215px;
+    right: 13%;
     top: 23px;
      z-index: 1049;
      cursor: pointer;
@@ -84,22 +84,14 @@ ul {
      list-style: none;
 }
 
-li:first-child {
-     color: grey;
-     font-family: Poppins;
-     font-size: 24px;
-}
+
 
 li:not(:first-child) {
      color: #fff;
      font-size: 18px;
 }
 
-a {
-     text-decoration: none;
-     color: black;
-     font-family: Poppins;
-}
+
 .navbar{
     height: 120px;
 }
@@ -453,7 +445,7 @@ background:url('../ing/base.png');
     /* position: absolute; */
     opacity: 0;
     /* padding: 27px; */
-    padding-top: 77%;
+    padding-top: 62%;
     transition: 0.3s;
 }
 
@@ -484,8 +476,14 @@ background:url('../ing/base.png');
 }
 
 
-
-
+a {
+    text-decoration: none;
+    color: black;
+}
+li:first-child {
+    color: grey;
+    font-size: 24px;
+}
 
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {  
@@ -684,12 +682,7 @@ img.searchicon{
     border-color: black;
 }
 
-.input-group.col-md-12{
 
-  padding: 0;
-  margin: 0;
-
-}
 
 input.form-control.input-lg {
 border: 0;
@@ -721,7 +714,6 @@ ol.type li {
 ol.type li a {
   color: #555;
   font-size: 16px;
-  font-weight: 400;
   padding: 8px 16px;
   border: 0;
   text-decoration: none;
@@ -730,10 +722,10 @@ ol.type li a {
   transition: all 0.3s;
 }
 ol.type li a.active {
-border-bottom: 1px solid black;
+border-bottom: 3px solid black;
 }
 ol.type li a:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
 
 }
 .isotope-item {
@@ -759,6 +751,9 @@ ol.type li a:hover {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
   transition-property: height, width;
+}
+.footercenter{
+      padding-top: 7px;
 }
 .isotope .isotope-item {
   -webkit-backface-visibility: hidden;
@@ -807,9 +802,16 @@ ol.type li a:hover {
 .hover-bg:hover .hover-text {
   opacity: 1;
 }
+.caseshr{
+  width: 8%;height: 3px;background-color: black; float: left;
+}
+.casestext{
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
 
 .konceptbg{
-  padding: 12px;
+  padding: 16px;
     height: 50px;
     background-color: black;
     position: absolute;
@@ -817,3 +819,215 @@ ol.type li a:hover {
   bottom: 4%;
   left: 3%;
   }
+
+  .konceptbgcase{
+      padding: 16px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    bottom: 4%;
+    left: 7%;
+}
+
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (max-width: 768px) {  
+    .konceptbgcase {left: 19%;}
+  }
+
+
+
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .casesinfo {margin-bottom: 7px;}
+}
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    .casesinfo {margin-bottom: 31px;}
+  }
+
+
+    .carhovercases:hover .hover-back{
+    
+    height: 100%;
+    width: 90%;
+    background-color: rgba(0,0,0,.3);
+    }
+    .hover-back{
+    position: absolute;
+    transition: 0.3s;
+    width: 90%;
+    height: 100%;
+    }
+    .caseinformation{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+        .konceptbgproduct{
+    padding: 17px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    
+    bottom: 13%;
+    left: 5%;
+    }
+    .product{
+    margin-bottom: 50px; text-align: center;padding: 8px;
+    }
+    .konceptbgproduct-2{
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    background-color: black;
+    border-radius: 65px;
+    height: 85px;
+    width: 85px;
+    /* text-align: center; */
+    padding: 0px;
+    }
+    .konceptbgproduct-2-text{
+    position: relative;
+    color: white;
+    top: 35%;
+    }
+    .proimagediv{
+      margin-bottom: 100px;
+    }
+.producthr{
+  width: 8%;height: 3px;background-color: black;
+}
+
+.bold-font{
+  font-weight: 800;
+}
+
+.semi-bold{
+  font-weight: 600;
+}
+
+.light-text{
+  font-weight: 100;
+}
+
+.text-font{
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-italic{
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+
+}
+
+.iconhoverface{
+  display: inline-block;
+}
+    .iconhoverinsta{
+      display: inline-block;
+    }
+    .iconhoverpint{
+      display: inline-block;
+    }
+    .iconhoverlink{
+      display: inline-block;
+    }
+    .iconkontakt{
+      display: inline-block;
+      font-size: 30px;
+      margin-right: 10px;
+    }
+
+    .ansathover:hover .hover-back{
+    
+    height: 100%;
+    width: 88%;
+    background-color: rgba(0,0,0,.3);
+    }
+    .hover-back{
+    position: absolute;
+    transition: 0.3s;
+    width: 90%;
+    height: 100%;
+    padding: 12%;
+    }
+    .iconhoverface:hover .iconj{
+    background-color: black;
+    color: white;
+    }
+    .iconhoverinsta:hover .iconj{
+    background-color: black;
+    color: white;
+    }
+    .iconhoverpint:hover .iconj{
+    background-color: black;
+    color: white
+    }
+    .iconhoverlink:hover .iconj{
+    background-color: black;
+    color: white
+    }
+    .iconj{
+    color: black;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    border-radius: 15px;
+    display: inline-block;
+    }
+    .iconhoverface{
+    display: inline-block;
+    }
+    .iconhoverinsta{
+    display: inline-block;
+    }
+    .iconhoverpint{
+    display: inline-block;
+    }
+    .iconhoverlink{
+    display: inline-block;
+    }
+    @media (max-width: 569px) {
+    .ansattediv {text-align: center;}
+    }
+    .ansattediv{
+    margin-bottom: 100px;
+    }
+    .ansattebackcolor{
+    background-color: #f3f3f3;
+    padding-top: 50px;
+    }
+
+    .medarbejderdiv{
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+        input.form-control.input-lg.jform{
+    border:1px solid black;
+    margin-bottom: 36px;
+    }
+
+    .holeform{
+    padding-left: 0;
+    }
+    .input-j{
+    padding-right: 0;
+    }
+    .kontakthr{
+    color: black;height: 3px;border: none;background-color: black;
+    }
+    .infohr{
+    width: 23%;height: 3px;background-color: black;
+    }
+
+    .kontaktdiv{
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .kontaktform{
+      margin-bottom: 100px;
+    }
